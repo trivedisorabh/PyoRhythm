@@ -43,16 +43,11 @@ out = []
 def ana_lag(s, l, t):
 	global avg1, avg2
 
-	ma = 0
-	for n in range(t):
-		ma += abs(sin(2*pi*n/t))
-	mf = 0
-	for n in range(t):
-		mf += .5 * abs(sin(2*pi*n/t) + sin(2*pi*(n+l)/t))
-	print s, int(.5+100*mf/ma), "%"
-	avg1 += 100*mf/ma
-	avg2 += 100*mf/ma
-	out.append(100*mf/ma)
+	qq = 100.*abs(cos(pi*l/t))	# from http://www.brianapps.net/palmbio/compatibility.html
+	print s, round(qq), "%"
+	avg1 += qq
+	avg2 += qq
+	out.append(qq)
 
 ana_lag("compat physical:    ", lag_p, 23)
 ana_lag("compat emotional:   ", lag_e, 28)
