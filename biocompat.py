@@ -1,7 +1,7 @@
 """
 Compute biorhythm compatibility
 
-2011-08-29
+2011-08-30
 
 Inspired by http://www.biorhythmonline.com/comp.php
 """
@@ -14,6 +14,14 @@ rc(('xtick.major','xtick.minor','ytick.major','ytick.minor'), pad=10)
 
 dd,mm,yy=10,11,1925	# Richard Burton
 dd2,mm2,yy2=27,2,1932	# Liz Taylor
+
+# computation method:
+method = 1	# 1: summed phase; 0: phase difference
+
+# (See http://www.brianapps.net/palmbio/compatibilitycomparison.png for
+#  the differences between computation methods.)
+
+#----------------------------------------------------------------------
 
 s1 = "%04u-%02u-%02u" % (yy,mm,dd)
 s2 = "%04u-%02u-%02u" % (yy2,mm2,dd2)
@@ -43,7 +51,11 @@ out = []
 def ana_lag(s, l, t):
 	global avg1, avg2
 
-	qq = 100.*abs(cos(pi*l/t))	# from http://www.brianapps.net/palmbio/compatibility.html
+	# from http://www.brianapps.net/palmbio/compatibility.html:
+	if method:
+		qq = 100.*abs(cos(pi*l/t))	# summed maximum method
+	else:
+		qq = 200./t*abs(l-t/2.)		# phase difference
 	print s, round(qq), "%"
 	avg1 += qq
 	avg2 += qq
