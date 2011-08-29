@@ -1,0 +1,10 @@
+PyoRhythm contains biorhythm computation scripts for Python and Matplotlib.
+
+bioplot.py:
+  Plot a chart for the next 31 days.
+
+biocompat.py:
+  Compute biorhythmic compatibility between two persons.
+
+Output is shown on the screen and written to PDFs (in the working directory).
+
