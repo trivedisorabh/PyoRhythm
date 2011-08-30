@@ -41,7 +41,9 @@ for p in t:
 
 fig = figure(figsize=(14,7))
 ax = fig.gca()
-plot(label,y[0],label,y[1],label,y[2], linewidth=4, alpha=.7)
+plot(label,y[0], color="r", linewidth=4, alpha=.7)
+plot(label,y[1], color="b", linewidth=4, alpha=.7)
+plot(label,y[2], color="g", linewidth=4, alpha=.7)
 plot(label,av3, linewidth=2, linestyle="--", color="black")
 plot(label,.5*(y[0]+y[1]),label,.5*(y[1]+y[2]),label,.5*(y[2]+y[0]), linewidth=2, alpha=.65)
 plot(label,y[3],label,y[4],label,y[5],label,y[6], linewidth=2, alpha=.3)
