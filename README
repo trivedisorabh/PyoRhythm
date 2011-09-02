@@ -9,5 +9,9 @@ bioyear.py:
 biocompat.py:
   Compute biorhythmic compatibility between two persons.
 
+biowarn.py:
+  Print HTML page of critical/mini-critical warnings, like the
+  1970s Kosmos-1 biorhythm calculator
+
 Output is shown on the screen and written to PDFs (in the working directory).
 
