@@ -13,5 +13,8 @@ biowarn.py:
   Print HTML page of critical/mini-critical warnings, like the
   1970s Kosmos-1 biorhythm calculator
 
+biomatch.py:
+  Show dates on which nobody in a given group has a critcal or mini-critical day.
+
 Output is shown on the screen and written to PDFs (in the working directory).
 
