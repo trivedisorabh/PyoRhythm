@@ -16,5 +16,8 @@ biowarn.py:
 biomatch.py:
   Show dates on which nobody in a given group has a critcal or mini-critical day.
 
+bioconky.py:
+  Modified version of biowarn.py that outputs Conky markup. (Python 3)
+
 Output is shown on the screen and written to PDFs (in the working directory).
 
