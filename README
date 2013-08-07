@@ -1,4 +1,7 @@
-PyoRhythm contains biorhythm computation scripts for Python and Matplotlib.
+PyoRhythm
+=========
+
+Various biorhythm computation scripts for Python 2 (and Matplotlib):
 
 bioplot.py:
   Plot a chart for the next 31 days.
@@ -8,6 +11,9 @@ bioyear.py:
 
 biocompat.py:
   Compute biorhythmic compatibility between two persons.
+
+compattable.py:
+  Compute a compatibility score for each pair in a group of people.
 
 biowarn.py:
   Print HTML page of critical/mini-critical warnings, like the
@@ -19,5 +25,5 @@ biomatch.py:
 bioconky.py:
   Modified version of biowarn.py that outputs Conky markup. (Python 3)
 
-Output is shown on the screen and written to PDFs (in the working directory).
+Graphical output is shown on the screen and written to PDFs (in the working directory).
 
