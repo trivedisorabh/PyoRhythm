@@ -49,10 +49,10 @@ for c in range(3):
     if (v-1) <= p/2:
         o[c] = 'H'
     if (v-1) >= p/2:
-        o[c] = 'T'
+        o[c] = 'L'
     if v in wa[c][0]:
         w[c] = 'r'
-        o[c] = 'K'
+        o[c] = 'C'
     if v in wa[c][1]:
         w[c] = 'y'
 for x in w:
