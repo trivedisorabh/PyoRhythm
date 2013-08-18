@@ -18,6 +18,8 @@ pers=(
  ((1952,12,9),  "Michael Dorn"),
 )
 
+nn = ("P","E","I")
+
 def f(a):
     if a < -3:
         return "(-)"    # bad compatibility
@@ -36,6 +38,7 @@ for n1, d1 in enumerate(pers):
 
         lag = abs(t2 - t1)
         score = 0
+        mat = ''
         for p in range(0,7):
             ld = 23 + 5 * p
             l_lag = lag % ld
@@ -48,6 +51,7 @@ for n1, d1 in enumerate(pers):
             elif qq > 65:
                 if p < 3:
                     score += 2
+                    mat += nn[p]
                 else:
                     score += 1
-        print score, d1[1],d2[1], f(score)
+        print score, d1[1],d2[1], f(score),mat
