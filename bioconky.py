@@ -17,6 +17,14 @@ The dominant cycle for each day is shown in parentheses.
 argument 1: Skip x days ahead (0 = today). Useful to output the next several days in Conky;
                  just call bioconky several times with offsets 0,1,2,3,...
 
+
+Sample usage in .conkyrc for the current day and a four-day forecast:
+
+${font Monospace:size=11}PEI: ${execpi 100 python /home/username/bin/bioconky.py 0}
+${alignr}${font Monospace:size=11}+1d: ${execpi 100 python /home/username/bin/bioconky.py 1}
+${alignr}${font Monospace:size=11}+2d: ${execpi 100 python /home/username/bin/bioconky.py 2}
+${alignr}${font Monospace:size=11}+3d: ${execpi 100 python /home/username/bin/bioconky.py 3}
+${alignr}${font Monospace:size=11}+4d: ${execpi 100 python /home/username/bin/bioconky.py 4}
 """
 
 dd,mm,yy=1,1,1990
