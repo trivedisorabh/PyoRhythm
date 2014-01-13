@@ -11,6 +11,12 @@ Examples:
 	python bio_imdb.py Test2 nm0000093
 	python bio_imdb.py nm0290556 Test
 	python bio_imdb.py 1993-11-3 Test
+
+Any other string as an argument performs a local database search (case is insignificant),
+e.g. "python bio_imdb.py tom" will show all names in the database that contain "tom".
+(This is useful for looking up IMDb ids of existing database entries.)
+
+Calling the script without an argument lists all existing database entries.
 """
 
 imp = True	# Save retrieved IMDb birthdays into local database?
