@@ -1,7 +1,7 @@
 PyoRhythm
 =========
 
-Various biorhythm computation scripts for Python 2 (and Matplotlib).
+Various biorhythm computation scripts for (mostly) Python 2 (and sometimes Matplotlib).
 Graphical output is shown on the screen and written to PDFs (in the working directory).
 
 * for a single person:
@@ -22,6 +22,9 @@ bioconky.py:
 
 * for two or more people (biorhythmic matching/compatibility):
 --------------------------------------------------------------
+
+bio_imdb.py:
+  Compute compatibility between two persons. Birthday information is taken either from IMDb, a built-in list, or directly via a date on the commandline. Needs Python 3.
 
 biocompat.py:
   Compute biorhythmic compatibility between two persons (using primary and I-Ching rhythms)
