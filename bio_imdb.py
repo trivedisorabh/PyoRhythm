@@ -168,7 +168,10 @@ avg2f = int(.5+avg2/7.)
 print("total average: ", avg2f, "%")
 
 if dirty and imp:
-	shutil.move("imdb_cache.dat", "imdb_cache.dat.bak")
+	try:
+		shutil.move("imdb_cache.dat", "imdb_cache.dat.bak")
+	except:
+		print("(Failed to create backup of old database file.)")
 	pickle.dump(imdb_cache, open("imdb_cache.dat", 'wb'), 1)
 
 # Print likely nature of relationship:
