@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Plot biorhythm for a whole year.
 
@@ -26,7 +27,7 @@ if len(argv)<2:
 else:
 	year = int(argv[1])		# read from command line
 
-print "Biorhythm for year", year
+print ("Biorhythm for year", year)
 
 def sig(q):
 	if q>=0: return 1
@@ -66,7 +67,7 @@ for n in range(len(t)-1):
 	if ( sig(y[0][n])!=sig(y[0][n+1]) or
 	     sig(y[1][n])!=sig(y[1][n+1]) or
 	     sig(y[2][n])!=sig(y[2][n+1]) ):
-		print label[n], "***"
+		print (label[n], "***")
 
 fig = figure(figsize=(11,16))
 

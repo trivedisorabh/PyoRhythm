@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Find upcoming biorhythmically-matching dates for a group of persons
 (i.e. days without warnings for all persons involved).
@@ -8,8 +9,8 @@ Find upcoming biorhythmically-matching dates for a group of persons
 
 b = ((1,1,1990),(31,1,1990),(15,1,1990))
 
-print "Matches for", b
-print 57*'-'
+print ("Matches for", b)
+print (57*'-')
 
 from datetime import date
 
@@ -37,5 +38,5 @@ for t in range(t1,t1+120):
 			m += 1
 	if m == len(b):
 		a = date.fromordinal(t)
-		print a, tag[a.weekday()]
+		print (a, tag[a.weekday()])
 

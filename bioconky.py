@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 Show biorhythm warnings like the KOSMOS-1 calculator with Conky

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Plot biorhythm. Includes secondary pulses
 
@@ -54,11 +55,11 @@ def f(x):
 	return 50.*(x+1)
 
 for n in range(len(t)-1):
-	print "%s %3.1f %3.1f %3.1f" % (label[n], f(y[0][n]), f(y[1][n]), f(y[2][n]))
+	print ("%s %3.1f %3.1f %3.1f" % (label[n], f(y[0][n]), f(y[1][n]), f(y[2][n])))
 	if ( sig(y[0][n])!=sig(y[0][n+1]) or
 	     sig(y[1][n])!=sig(y[1][n+1]) or
 	     sig(y[2][n])!=sig(y[2][n+1]) ):
-		print label[n], "***"
+		print (label[n], "***")
 
 # adding a legend
 legend(['Physical', 'Emotional', 'Intellectual','AVERAGE-3',

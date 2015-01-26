@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Compute biorhythm compatibility
 
@@ -26,8 +27,8 @@ method = 1	# 1: summed phase; 0: phase difference
 s1 = "%04u-%02u-%02u" % (yy,mm,dd)
 s2 = "%04u-%02u-%02u" % (yy2,mm2,dd2)
 
-print "Compatibility between",s1,"and",s2
-print 47*'-'
+print ("Compatibility between",s1,"and",s2)
+print (47*'-')
 
 t1 = date(yy,mm,dd).toordinal()
 t2 = date(yy2,mm2,dd2).toordinal()
@@ -43,7 +44,7 @@ lag_aes = lag % 43
 lag_awa = lag % 48
 lag_spi = lag % 53
 
-print "lags (PEI):", lag_p,lag_e,lag_i
+print ("lags (PEI):", lag_p,lag_e,lag_i)
 
 avg1, avg2 = 0,0
 out = []
@@ -56,7 +57,7 @@ def ana_lag(s, l, t):
 		qq = 100.*abs(cos(pi*l/t))	# summed maximum method
 	else:
 		qq = 200./t*abs(l-t/2.)		# phase difference
-	print s, round(qq), "%"
+	print (s, round(qq), "%")
 	avg1 += qq
 	avg2 += qq
 	out.append(qq)
@@ -65,14 +66,14 @@ ana_lag("compat physical:    ", lag_p, 23)
 ana_lag("compat emotional:   ", lag_e, 28)
 ana_lag("compat intellectual:", lag_i, 33)
 avg1f = int(.5+avg1/3.)
-print "average: ", avg1f, "%"
+print ("average: ", avg1f, "%")
 
 ana_lag("compat intuitive: ", lag_int, 38)	# aka compassion
 ana_lag("compat aesthetic: ", lag_aes, 43)
 ana_lag("compat awareness: ", lag_awa, 48)
 ana_lag("compat spiritual: ", lag_spi, 53)
 avg2f = int(.5+avg2/7.)
-print "total average: ", avg2f, "%"
+print ("total average: ", avg2f, "%")
 
 tnam = ('Emotional','Physical','Intellectual','Main Average','Spiritual','Awareness','Intuitive','Aesthetic','Total Average')
 

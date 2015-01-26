@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 # Score-based network analysis of biorhythms. Higher scores mean more compatibility.
 # (Matching primary cycles net two points. 50%-65% compatibility is considered neutral.)
@@ -54,4 +54,5 @@ for n1, d1 in enumerate(pers):
                     mat += nn[p]
                 else:
                     score += 1
-        print score, d1[1],d2[1], f(score),mat
+        print (score, d1[1],d2[1], f(score),mat)
+

@@ -1,7 +1,7 @@
 PyoRhythm
 =========
 
-Various biorhythm computation scripts for (mostly) Python 2 (and sometimes Matplotlib).
+Various biorhythm computation scripts for Python 3. Matplotlib is required for some of them.
 Graphical output is shown on the screen and written to PDFs (in the working directory).
 
 * for a single person:

@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 """
@@ -7,7 +7,7 @@ P: physical
 E: emotional
 I: intellectual
 
-2013-01-13
+2015-01-18
 
 Red: critical days
 Orange: mini-critical days
@@ -41,15 +41,15 @@ else:
 
 s = {'_': '<font color="#00ff00">&#9679;</font>', 'y': '<font color="#ffd700">&#9679;</font>', 'r': '<font color="#ff0000">&#9679;</font>'}
 
-print '<html><head><meta charset="UTF-8"><title>%s</title><body><h3>%s</h3>' % (ti, ti)
+print ('<html><head><meta charset="UTF-8"><title>%s</title><body><h3>%s</h3>' % (ti, ti))
 
-print '<font face="Courier New">'
+print ('<font face="Courier New">')
 
-for t in range(t1-3,t1+365):
+for t in range(t1-3,t1+400):
 	if not (date.fromordinal(t).day-1)%5 and (date.fromordinal(t).day-1)%30:
-		print '<hr width="42%" align="left">'
+		print ('<hr width="42%" align="left">')
 	if date.fromordinal(t).day == 1:
-		print '<hr width="60%" align="left">'
+		print ('<hr width="60%" align="left">')
 	w = ['_','_','_']
 	o = ['*','*','*']
 	for c in range(3):
@@ -65,12 +65,12 @@ for t in range(t1-3,t1+365):
 		if v in wa[c][1]:
 			w[c] = 'y'
 	a = date.fromordinal(t)
-	print tag[a.weekday()], a
+	print (tag[a.weekday()], a)
 	for x in w:
-		print s[x]
+		print (s[x])
 	for x in o:
-		print x,
-	print "<br>"
+		print (x,)
+	print ("<br>")
 
-print "</font></body></html>"
+print ("</font></body></html>")
 

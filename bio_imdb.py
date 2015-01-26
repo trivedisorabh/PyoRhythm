@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Get birthdays and compute biorhythm compatibility
 
