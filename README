@@ -18,13 +18,13 @@ biowarn.py:
   1970s Kosmos-1 biorhythm calculator
 
 bioconky.py:
-  Modified version of biowarn.py that outputs Conky markup (Python 3)
+  Modified version of biowarn.py that outputs Conky markup
 
 * for two or more people (biorhythmic matching/compatibility):
 --------------------------------------------------------------
 
 bio_imdb.py:
-  Compute compatibility between two persons. Birthday information is taken either from IMDb, a built-in list, or directly via a date on the commandline. Needs Python 3.
+  Compute compatibility between two persons. Birthday information is taken either from IMDb, a built-in list, or directly via a date on the commandline.
 
 biocompat.py:
   Compute biorhythmic compatibility between two persons (using primary and I-Ching rhythms)
