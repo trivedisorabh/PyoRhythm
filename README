@@ -17,7 +17,7 @@ biowarn.py:
   Create a "traffic light"-style HTML page of critical/mini-critical warnings, like the
   1970s Kosmos-1 biorhythm calculator
 
-bioconky.py:
+conky/bioconky.py:
   Modified version of biowarn.py that outputs Conky markup
 
 * for two or more people (biorhythmic matching/compatibility):
