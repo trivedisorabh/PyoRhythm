@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# Computer partner compatibility like Tandy Astro
+# Computer partner compatibility like Kosmos Astro
 # (needs PySwissEph)
 # 2016-02-27
 

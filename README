@@ -36,3 +36,6 @@ compattable.py:
 biomatch.py:
   Show dates on which nobody in a given group has a critcal or mini-critical day
 
+kosmos_astro.py:
+  Computes partner compatibility like the Kosmos Astro
+
