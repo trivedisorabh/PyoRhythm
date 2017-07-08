@@ -17,6 +17,7 @@ import sys, datetime
 from reportlab.lib import colors
 from reportlab.platypus import BaseDocTemplate, Table, TableStyle, Frame, PageTemplate
 from reportlab.lib.pagesizes import cm, inch, A4, landscape
+from reportlab.lib.units import mm
 
 try:
 	year = int(sys.argv[1])
@@ -26,7 +27,6 @@ except:
 
 by, bm, bd = 1990, 1, 1
 
-mm = cm / 10
 width, height = 297, 210	# A4 landscape frame
 
 pagesize = (width * mm, height * mm)
