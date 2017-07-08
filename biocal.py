@@ -6,7 +6,7 @@ with the ReportLab module
 
 check mark = high
 downward triangle = low
-asterisk = critical day
+star = critical day
 
 2017-07-08
 
@@ -112,7 +112,7 @@ for a in range(12):
 	t._argW[a]=2.2*cm
 for wx, wy in we:
 	t.setStyle(TableStyle([
-		('BACKGROUND', (wx, wy), (wx, wy), '#dddddd'),
+		('BACKGROUND', (wx, wy), (wx, wy), '#aaaaaa'),
 		]))
 elements.append(t)
 doc.build(elements)
