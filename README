@@ -17,6 +17,9 @@ biowarn.py:
   Create a "traffic light"-style HTML page of critical/mini-critical warnings, like the
   1970s Kosmos-1 biorhythm calculator
 
+biocal.py:
+  Create a PDF with a whole-year biorhythm calendar (requires the ReportLab module)
+
 conky/bioconky.py:
   Modified version of biowarn.py that outputs Conky markup
 
