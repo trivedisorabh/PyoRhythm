@@ -27,7 +27,8 @@ except:
 
 by, bm, bd = 1990, 1, 1
 
-width, height = 297, 210	# A4 landscape frame
+width, height = A4[1] * 127 / 360, A4[0] * 127 / 360	# A4 landscape frame,
+							# converted from points to mm
 
 pagesize = (width * mm, height * mm)
 F=Frame(0, 0, width * mm, height * mm,
@@ -93,7 +94,7 @@ for day in range(1, 32):
 			we.append((month - 1, day))
 	data.append(d2)
 
-data.append((year,) + ('%4u–%02u–%02u' % (by, bm, bd),)  +10 * ('',))
+data.append((year,) + ('%4u–%02u–%02u' % (by, bm, bd),)  + 10 * ('',))
 
 t = Table(data, rowHeights=(.55 * cm))
 t.setStyle(TableStyle([
