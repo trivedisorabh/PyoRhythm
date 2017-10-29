@@ -1,16 +1,15 @@
 #!/usr/bin/python
 # Print next moon quarter (requires PyEphem)
-# 2014-07-08
+# 2017-10-29
 
 import ephem
 
 n = ephem.now()
 
-# Unicode symbols are for inverted text (white on black):
-p = [[ephem.next_full_moon(n),"🌑 Vollmond"],
-[ephem.next_last_quarter_moon(n),"🌓 Letztes Viertel"],
-[ephem.next_new_moon(n),"🌕 Neumond"],
-[ephem.next_first_quarter_moon(n),"🌗 Erstes Viertel"]]
+p = [[ephem.next_full_moon(n),"🌕 Vollmond"],
+[ephem.next_last_quarter_moon(n),"🌗 Letztes Viertel"],
+[ephem.next_new_moon(n),"🌑 Neumond"],
+[ephem.next_first_quarter_moon(n),"🌓 Erstes Viertel"]]
 
 p.sort()
 
