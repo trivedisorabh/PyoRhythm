@@ -96,8 +96,9 @@ def getdate(id):
 	html = response.read()
 	html = html.decode('utf-8')
 
+	n2 = ''
 	for l in html.split("\n"):
-		if "<title" in l:
+		if "<title" in l and not n2:
 			s = l.split(" - ")[0]
 			n2 = s.split(">")[1]
 		if "<time datetime=" in l:
